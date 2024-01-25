@@ -7,7 +7,7 @@ function openLink(event, linkName){
 }
     document.getElementById(linkName).style.display = "block";
 
-document.getElementsByClassName("baritem")[0].click()
+document.getElementsByClassName('block')[0].click()
 }
 
 const licor = document.querySelectorAll('.licor')
@@ -24,5 +24,6 @@ licor.forEach( (cadaLi , i )=>{
     })
 })
 
-
-
+if ( window.history.replaceState ) {
+    window.history.replaceState( null, null, window.location.href );
+}
