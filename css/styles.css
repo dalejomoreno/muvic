@@ -350,3 +350,15 @@
             
         }
     }
+
+
+/*page*/
+
+.page-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+
+}
