@@ -202,6 +202,9 @@
         width: 95%;
         opacity: 0;
     }
+     #moving{
+        z-index: 1;
+    }
     .subcontainer .block.active{
         opacity: 1;
     }
