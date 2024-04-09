@@ -1,3 +1,3 @@
 # gotruck
 Moving service company
-https://dalejomoreno.github.io/gotruck/
+https://dalejomoreno.github.io/muvic/
