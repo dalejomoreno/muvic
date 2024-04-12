@@ -119,7 +119,7 @@
         background-color: #160b5a;
         
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
         padding: 0 2em;
@@ -127,26 +127,24 @@
     .header-a{}
     .header-img{
         width: 8em;
-        height: 3em;
-
+        height: 3em;   
         
-    }
-    .header :hover{
-        filter: grayscale(0%);
     }
     .header-ul{
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: flex-start;
         align-items: center;
     }
     .header-li{
         margin: 0 0 0 2rem;
+        color: white;
     }
     
     .main{
         background-image: url(../img/toronto_color.jpg);
         background-size: cover;
+      
         background-attachment: fixed;
         max-width: 100%;
         
@@ -154,7 +152,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        height: 45em;
+        min-height: 45em;
         
     }
     .main-img{}
@@ -166,7 +164,6 @@
     }
     .container .ul{
         width: 100%;
-        /* background-color: #0f1618; */
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
@@ -224,8 +221,8 @@
         margin-bottom: 0.6em;
         border: .1em solid rgb(163, 161, 161);
         border-radius: 0.2em;
-        width: 90%;
-        padding: 0.2em;
+        width: 73%;
+        padding: 0.em;
     }
     .block-input.short{
         max-width: 9em;
