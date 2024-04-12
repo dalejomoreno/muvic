@@ -116,7 +116,7 @@
     .header{
         width: 100%;
         height: 10vh;
-        background-color:ghostwhite;
+        background-color: #160b5a;
         
         display: flex;
         flex-flow: row nowrap;
@@ -128,7 +128,7 @@
     .header-img{
         width: 8em;
         height: 3em;
-        filter: grayscale(100%);
+
         
     }
     .header :hover{
@@ -145,7 +145,7 @@
     }
     
     .main{
-        background-image: url(../img/toronto_gray.jpg);
+        background-image: url(../img/toronto_color.jpg);
         background-size: cover;
         background-attachment: fixed;
         max-width: 100%;
@@ -166,14 +166,14 @@
     }
     .container .ul{
         width: 100%;
-        background-color: #0f1618;
+        /* background-color: #0f1618; */
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: center;
     }
     .container .licor{
-        background-color: #0f1618;
+        background-color: #160b5a;
         color: whitesmoke;
         padding: 0.5em 2em 0.5em 2em;    
         text-transform: uppercase;
@@ -181,16 +181,19 @@
         font-size: 13px;
     }
     .container .licor.active{
-        background-color: #dc191e;
+        background-color: #160b5a;
         transition: all 0.5s ease;
-        color: white;
+        color: #FA9A36;
+
     }
     .licor:hover{
-        background-color: rgb(163, 161, 161);
-        color:#0f1618;
+
+        color:#FA9A36;
+        transform: scale(0.9);
+
     }
     .container .subcontainer{
-        background-color: ghostwhite;
+        background-color: white;
         min-height: 25em;
         position: relative;  
         
@@ -202,7 +205,7 @@
         width: 95%;
         opacity: 0;
     }
-     #moving{
+    #moving{
         z-index: 1;
     }
     .subcontainer .block.active{
@@ -214,7 +217,6 @@
     }
     .block-h3{
         margin: 0em 0em 0.3em 0em;
-        font-size: 1.1em;
         width: 95%;
     }
     .block-input{
@@ -229,7 +231,7 @@
         max-width: 9em;
     }
     .button{
-        background-color: rgb(90, 89, 89);
+        background-color: #160B5A;
     
         padding: 10px 20px 30px 20px;
         font-size: 16px;
@@ -239,7 +241,7 @@
         border-radius: 5px;
         text-align: center;
         cursor: pointer;
-        color: #fff;
+        color:  white;
         letter-spacing: 0.1em;
     }
     .space{
@@ -247,7 +249,7 @@
         background: linear-gradient(rgb(53, 52, 52, 0.986),black);
     }
     .footer{
-        background-color:#020202fb;
+        background-color: #160b5a;
         
         padding: 1em 1em;
         display: flex;
@@ -261,7 +263,7 @@
     .footer.subcontainer-short .h3{
         font-size: 30px;
         margin-bottom: 0.5em;
-        color: white;
+        color: #FA9A36;
         
         
     }
@@ -294,7 +296,7 @@
         text-align: center;
         font-size: 20px;
         width: 10em;
-        color: rgb(129, 128, 128);
+        color: white;
     }
     .footer-a{
         display: block;
@@ -311,10 +313,10 @@
         width: 2em;
         height: 2em;
         margin: 1em;
-        color: rgb(129, 128, 128);
+        color: white;
     }
     .footer.p{
-        color: rgb(129, 128, 128);
+        color: white;
     }
 
 
@@ -352,6 +354,10 @@
     }
 
 
+
+
+
+
 /*page*/
 
 .page-container{
@@ -362,3 +368,6 @@
     padding: 3em;
 
 }
+
+
+
