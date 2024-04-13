@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GO Truck | Toronto</title>
+  <title>MUVIC | Toronto</title>
   <link href="./css/styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,14 +30,15 @@
     <div class="container">
   <!-- Main-Content -->
       <!-- Main-Taps -->
+
       <ul class="ul">
-        <li class="licor active" onclick="openLink(event,'moving');">Moving Service</li>
-        <li class="licor" onclick="openLink(event,'transporting');">Moving Supplies</li>
-        <li class="licor" onclick="openLink(event,'commuting');">Commuting</li>
+        <li class="licor active"><h2>Moving Service</h2></li>
+        <li class="licor"><h2>Moving Supplies</h2></li>
+        <li class="licor"><h2>Commuting</h2></li>
       </ul>
   <!-- Moving -->
       <div class="subcontainer">
-        <form class="block" id="moving" action="page.html">
+        <form class="block active" id="moving" action="page.html">
           <h3 class="block-h3">Small & Medium Movings in Toronto and GTA</h3>
           <div>
             <label for="input_label1" class="subcontainer-label">Pick Up Location*</label>
@@ -63,12 +64,24 @@
               <option value="0"></option>
               <option value="1"></option>
               <option value="2"></option>
+              <option value="Not sure"></option>
             </datalist>
           </div>
+
+          <div>
+            <label class="subcontainer-label">Describe the object(s) to transport:</label>
+            <input class="block-input" type="text" name="transporting_description" placeholder="e.g.: Mattress, stove,bed, couch, etc." required>
+          </div>
+
+          <div class="attachImg">
+            <label for="image">Please attach some pictures of biggest objects</label>
+            <input type="file" name="image" accept="image/*"/><br/>
+          </div>
+
           <button class="button" type="submit" name='register1'>Submit</button>
         </form>
   <!-- Transporting Tap -->
-        <form class="block" id="transporting" action="page.html">
+        <form class="block " id="transporting" action="page.html">
           <h3 class="block-h3">The Most Reliable Transportation Service In and Around Toronto</h3>
           <div>
             <label class="subcontainer-label">Pick Up Location*</label>
@@ -87,7 +100,7 @@
 
           <div>
             <label class="subcontainer-label">Describe the object(s) to transport:</label>
-            <input class="block-input" type="text" name="transporting_description" placeholder="e.g.: Stove,bed, couch, etc." required>
+            <input class="block-input" type="text" name="transporting_description" placeholder="e.g.: Mattress, stove,bed, couch, etc." required>
           </div>
           <button class="button" type="submit" name="register2">Submit</button>
         </form>
@@ -142,7 +155,7 @@
     <div class="footer subcontainer-short">
       <h3 class="h3" id="contact">Contact</h3>
       <p class="p">Let us book your next trip</p>
-      <p class="p">-  Toronto, ON<br>-  Phone: +1 (437) 431-4059<br>-  Email: moving247@gmail.com</p>
+      <p class="p">-  Toronto, ON<br>-  Phone: +1 (437) 431-4059<br>-  Email: muvic@gmail.com</p>
     
 
     <form class="form-footer">
