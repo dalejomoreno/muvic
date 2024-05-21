@@ -27,3 +27,20 @@ licor.forEach( (cadaLi , i )=>{
 if ( window.history.replaceState ) {
     window.history.replaceState( null, null, window.location.href );
 }
+
+const subcontainer2 = document.querySelector('.subcontainer2');
+const puntos        = document.querySelectorAll('.main-container2-li');
+
+puntos.forEach((eachPoint, i)=>{
+    puntos[i].addEventListener('click', ()=>{
+        let initialPosition = i;
+        let nextPosition    = initialPosition * ( - 100 /6 )
+
+        subcontainer2.style.transform  = `translateX(${nextPosition}%)`
+
+        puntos.forEach((eachPoint, i)=>{
+            puntos[i].classList.remove("active")
+        })
+        puntos[i].classList.add("active")
+    })
+})

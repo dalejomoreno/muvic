@@ -163,6 +163,23 @@
         
            
     }
+
+    .container-top{
+        /* background-color: pink; */
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 95em;
+        padding: 0;
+        margin: 0;
+    }
+    .container-top .container-h2{
+        color: white;
+        margin: 5vh 0;
+        font-size: 200%;
+        font-style: italic;
+    }
     .container .ul{
         width: 100%;
         display: flex;
@@ -177,6 +194,7 @@
         text-transform: uppercase;
         cursor: pointer;
         font-size: 13px;
+        
     }
     .container .licor.active{
         background-color: #160b5a;
@@ -187,8 +205,10 @@
     }
     .licor h2:hover{
 
-        color:#FA9A36;
-        transform: scale(1.2);
+
+        transform: scale(1.1);
+        font-weight: bold;
+        transition: all 0.2s ease;
 
     }
     .container .subcontainer{
@@ -206,6 +226,8 @@
         overflow: hidden;
         margin: 0;
         padding: 0;
+
+        
     }
 
     .subcontainer .block.active{
@@ -215,6 +237,7 @@
 
         display: flex;
         flex-flow: column wrap;
+        transition: all 0.5s ease-in-out;
 
     }
 
@@ -251,12 +274,114 @@
         color:  white;
         letter-spacing: 0.1em;
     }
-    .space{
-        height: 30px;
+
+
+    .container2{
+
         background: linear-gradient(rgba(9, 9, 9, 0.986),#160b5a);
+        
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        
     }
+
+.main-container2{
+
+    margin: 2em;
+    width: 50%;
+
+    overflow: hidden;
+
+    display: grid;
+
+
+}
+.main-container2 .subcontainer2{
+    background-color: lightcoral;
+
+
+    width: 600%;
+    height: 70vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+.main-container2 .img{
+    /* background-color: lightgoldenrodyellow; */
+
+    width: calc(100% / 6);
+    height: 100%;
+
+}
+
+
+
+
+
+.main-container2-ul{
+    /* background-color: lightcyan; */
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-container2-li{
+    background-color: white;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin: 0.5em 0.5em;
+}
+
+.main-container2-li:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.main-container2-li.active{
+    background-color: #FA9A36;
+
+}
+
+.phrase{
+    background-color: none;
+    color: white;
+    padding: 3em;
+    font-size: 3vh;
+    line-height: 5vh;
+    text-align: center;
+
+    
+    
+
+}
+
+
+.space{
+    background: linear-gradient(rgba(9, 9, 9, 0.986),#160b5a);
+    height: 2em;
+}
+
+
+
+
+
     .footer{
         background-color: #160b5a;
+        
         
         padding: 1em 1em;
         display: flex;
